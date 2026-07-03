@@ -21,7 +21,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="col-6 col-lg-2">
+          <div className="col-12 col-sm-6 col-lg-2">
             <h6 className="text-white fw-bold mb-3">Navegación</h6>
             <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
               <li><Link to="/">Inicio</Link></li>
@@ -30,9 +30,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-6 col-lg-3">
+          <div className="col-12 col-sm-6 col-lg-3">
             <h6 className="text-white fw-bold mb-3">Contacto</h6>
-            <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
+            <ul className="list-unstyled d-flex flex-column gap-2 mb-0" style={{overflowWrap: "anywhere"}}>
               <li>hola@manosquealimentan.org</li>
               <li>+34 900 123 456</li>
               <li>Calle Solidaridad 12, Madrid</li>

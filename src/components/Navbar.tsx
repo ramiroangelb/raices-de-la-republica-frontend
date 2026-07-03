@@ -20,11 +20,11 @@ export default function Navbar() {
             className="d-flex align-items-center gap-3 text-decoration-none"
             onClick={() => setOpen(false)}
           >
-            <span className="mqa-logo-wrap">
-              <img src="/logo_raices_solitario.png" alt="Logo de Raíces de la República" className="" style={{marginLeft: "0.5rem",marginTop: "-1.6rem", width: "100px", WebkitFilter: "drop-shadow(5px 5px 5px #222)", filter: "drop-shadow(-2px 2px 1px #2226)"}} />
+            <span className="">
+              <img src="/logo_raices_solitario.png" alt="Logo de Raíces de la República" className="w-100 w-md-25" style={{marginLeft: "20px", minWidth: "20px", maxWidth: "100px", WebkitFilter: "drop-shadow(5px 5px 5px #222)", filter: "drop-shadow(-2px 2px 1px #2226)"}} />
             </span>
             <span className="d-flex flex-column lh-1">
-              <img src="/texto_raices.png" alt="Raíces de la República asociación civil Leg. 239598 Mat. 46251" className=""  style={{marginLeft: "-0.5rem",width: "365px"}} />
+              <img src="/texto_raices.png" alt="Raíces de la República asociación civil Leg. 239598 Mat. 46251" className="w-100 w-md-25"  style={{marginLeft: "-5px", minWidth: "160px", maxWidth: "365px"}} />
             </span>
           </Link>
 

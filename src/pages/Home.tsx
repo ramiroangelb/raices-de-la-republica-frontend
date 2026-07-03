@@ -42,7 +42,7 @@ export default function Home() {
       {/* HERO */}
       <section className="mqa-hero">
         <div className="container section">
-          <div className="row align-items-center g-5">
+          <div className="row align-items-center g-5" style={{marginTop: "-6rem"}}>
             <div className="col-lg-6">
               <p className="mqa-hero-eyebrow mb-3">Juntos contra el hambre</p>
               <h1 className="display-4 fw-bold mb-3 text-balance">
