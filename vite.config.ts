@@ -5,7 +5,6 @@ export default defineConfig({
   plugins: [react()],
   base: "/raices-de-la-republica-frontend/",
   server: {
-    //host: "127.0.0.1",
     port: 3000,
     strictPort: true,
   },
