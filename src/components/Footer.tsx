@@ -60,6 +60,7 @@ export default function Footer() {
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small">
           <span>© {new Date().getFullYear()} Raíces de la República. ONG sin fines de lucro.</span>
           <span>Hecho con propósito · Transparencia · Compromiso</span>
+          <span>Desarrollado por Ramiro Bahilez</span>
         </div>
       </div>
     </footer>
