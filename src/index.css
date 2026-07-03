@@ -22,6 +22,12 @@
   --bs-link-hover-color: #1f5233;
 }
 
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--mqa-cream);
   color: var(--mqa-ink);
