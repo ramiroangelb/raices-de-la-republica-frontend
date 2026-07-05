@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
-
+import { Outlet } from "react-router-dom"
 const links = [
   { to: "/", label: "Inicio", end: true },
   { to: "/informacion", label: "Información" },
@@ -11,6 +11,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
+    <>
     <nav className="mqa-navbar">
       <div className="container">
         <div className="d-flex align-items-center justify-content-between py-2">
@@ -84,5 +85,7 @@ export default function Navbar() {
         )}
       </div>
     </nav>
+    <Outlet/>
+    </>
   )
 }

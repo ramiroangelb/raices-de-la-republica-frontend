@@ -249,3 +249,35 @@ h5,
 .mqa-footer a:hover {
   color: #fff;
 }
+
+/* Velocidad de foco/desenfoque pareja en ambas direcciones */
+.form-control,
+.form-select {
+  transition: border-color .08s ease-out, box-shadow .08s ease-out;
+}
+
+/* Foco en verde en vez del azul default de Bootstrap */
+.form-control:focus,
+.form-select:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.mqa-hover {
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+.mqa-hover:hover {
+  background-color: rgba(var(--mqa-green-rgb), 0.1);
+  color: var(--mqa-green-dark);
+}
+.sidebar-link {
+  background-color: rgba(var(--mqa-green-rgb), 0.1);
+  transition: background-color 0.1s ease-in-out;
+}
+.sidebar-link:hover {
+  background-color: rgba(var(--mqa-green-rgb), 0.25);
+}
+
+.ong-font {
+  font-family: "Nunito Sans", system-ui, sans-serif;
+}

@@ -5,6 +5,7 @@ import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Donate from "./pages/Donate"
+import ControlPanel from "./pages/ControlPanel"
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -18,12 +19,14 @@ export default function App() {
   return (
     <div className="d-flex flex-column min-vh-100">
       <ScrollToTop />
-      <Navbar />
       <main className="flex-grow-1">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/informacion" element={<About />} />
-          <Route path="/donar" element={<Donate />} />
+          <Route element={<Navbar />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/informacion" element={<About />} />
+            <Route path="/donar" element={<Donate />} />
+          </Route>
+          <Route path="/adminpanel" element={<ControlPanel />} />
         </Routes>
       </main>
       <Footer />
