@@ -319,7 +319,10 @@ export default function App() {
   }
 
   return (
-    <div className="min-vh-screen bg-light text-dark d-flex flex-column">
+<div
+  className="text-dark d-flex flex-column"
+  style={{ minHeight: "100vh", marginLeft: "280px", backgroundColor: "#B9CCC1"}}
+>
       <Notification notification={notification} onClose={closeNotification} />
 
       {!isLoggedIn ? (
@@ -332,7 +335,10 @@ export default function App() {
           authLoading={authLoading}
         />
       ) : (
-        <div className="flex-grow-1 d-flex flex-column flex-md-row">
+        <div
+  className="flex-grow-1 d-flex flex-column flex-md-row"
+  style={{ minHeight: "100vh", alignItems: "flex-start" }}
+>
           <Sidebar
             activeTab={activeTab}
             onTabChange={setActiveTab}

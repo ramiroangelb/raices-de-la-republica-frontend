@@ -11,9 +11,17 @@ interface SidebarProps {
 
 function Sidebar({ activeTab, onTabChange, userEmail, onLogout }: SidebarProps) {
   return (
+    // Sidebar
     <aside
-      className="bg-dark text-white-50 p-4 d-flex flex-column justify-content-between border-end border-secondary"
-      style={{ width: '100%', maxWidth: '280px', minHeight: '100vh' }}
+      className="bg-dark text-white-50 p-4"
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "280px",
+        height: "100vh",
+        overflowY: "auto",
+      }}
     >
       <div>
         <div className="d-flex align-items-center gap-3 mb-4">

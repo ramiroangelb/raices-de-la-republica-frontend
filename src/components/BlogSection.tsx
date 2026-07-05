@@ -11,8 +11,11 @@ interface BlogSectionProps {
 function BlogSection({ blogPosts, onEdit, onDelete }: BlogSectionProps) {
   return (
     <div className="row g-4">
-      {blogPosts.map((post) => {
+      {
+        [...blogPosts].reverse().map((post) => {
         const embedId = getYoutubeEmbedId(post.mediaurl)
+        console.log([...blogPosts])
+        console.log([...blogPosts].reverse())
         return (
           <div key={post.id} className="col-12 col-lg-6">
             <div className="card border-0 shadow-sm rounded-4 overflow-hidden h-100 d-flex flex-column justify-content-between">
