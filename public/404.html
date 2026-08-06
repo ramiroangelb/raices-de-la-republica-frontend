@@ -1,18 +1,11 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo_raices_solitario.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#2f7d4a" />
-    <meta
-      name="description"
-      content="Raíces de la República es una ONG dedicada a combatir el hambre y la pobreza. Colabora, dona y sé parte del cambio."
-    />
-    <title>Raíces de la República — ONG contra el hambre y la pobreza</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <script>
+    sessionStorage.redirect = location.pathname;
+    location.replace("/");
+  </script>
+</head>
+<body></body>
 </html>
