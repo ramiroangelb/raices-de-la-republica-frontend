@@ -29,11 +29,11 @@ export default function NotFound() {
             </p>
 
             <div className="d-flex flex-wrap gap-3 justify-content-center">
-              <Link to="/" className="btn mqa-btn-primary btn-lg d-inline-flex align-items-center gap-2">
+              <Link to="/" className="btn btn-primary btn-lg d-inline-flex align-items-center gap-2">
                 <ArrowRightIcon size={20} />
                 Volver al inicio
               </Link>
-              <Link to="/donar" className="btn mqa-btn-outline btn-lg d-inline-flex align-items-center gap-2">
+              <Link to="/donar" className="btn btn-amber btn-lg d-inline-flex align-items-center gap-2">
                 <HeartIcon size={20} />
                 Quiero colaborar
               </Link>
