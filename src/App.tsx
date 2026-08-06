@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Donate from "./pages/Donate"
 import ControlPanel from "./pages/ControlPanel"
+import NotFound from "./pages/NotFound"
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/informacion" element={<About />} />
             <Route path="/donar" element={<Donate />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
           <Route path="/adminpanel" element={<ControlPanel />} />
         </Routes>
