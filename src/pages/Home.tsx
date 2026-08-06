@@ -45,12 +45,20 @@ export default function Home() {
           <div className="row align-items-center g-5" style={{marginTop: "-6rem"}}>
             <div className="col-lg-6">
               <p className="mqa-hero-eyebrow mb-3">Juntos contra el hambre</p>
-              <h1 className="display-4 fw-bold mb-3 text-balance">
-                Cada plato lleno es una <span className="text-green-dark">historia que cambia</span>
+              <h3 className="fw-bold mb-0 text-balance">
+                Cada plato lleno es un
+              </h3>
+              <h1 className="display-4 fw-bold mb-3 text-balance" style={{marginTop: "-0.5rem"}}>
+                <span className="text-green-dark">momento compartido</span>.
+              </h1>
+              <h3 className="fw-bold mb-0 text-balance">
+                Cada clase es una
+              </h3>
+              <h1 className="display-4 fw-bold mb-3 text-balance" style={{marginTop: "-0.5rem"}}>
+                <span className="text-green-dark">historia que cambia</span>.
               </h1>
               <p className="fs-5 text-muted mb-4 text-pretty" style={{ maxWidth: 520 }}>
-                Somos Raíces de la República, una ONG que combate por los derechos de los niños en nuestras
-                comunidades. Con tu ayuda, llevamos comida, dignidad y futuro a quienes más lo necesitan.
+                Somos Raíces de la República, una ONG que lucha por los derechos de los niños en nuestras comunidades. Con tu ayuda, llevamos dignidad y futuro a quienes más lo necesitan.
               </p>
               <div className="d-flex flex-wrap gap-3">
                 <Link to="/donar" className="btn btn-primary btn-lg d-inline-flex align-items-center gap-2">
@@ -63,7 +71,7 @@ export default function Home() {
             </div>
             <div className="col-lg-6">
               <div style={{ height: 420 }}>
-                <img src="/hero.png" alt="Voluntarios repartiendo alimentos a familias" className="mqa-hero-img" />
+                <img src="/PrimeraClase.jpeg" alt="Voluntarios repartiendo alimentos a familias" className="mqa-hero-img" />
               </div>
             </div>
           </div>
@@ -92,7 +100,7 @@ export default function Home() {
           <div className="row align-items-center g-5">
             <div className="col-lg-6 order-lg-2">
               <p className="eyebrow mb-2">Nuestra misión</p>
-              <h2 className="fw-bold mb-3 text-balance">Comida hoy, oportunidades para mañana</h2>
+              <h2 className="fw-bold mb-3 text-balance">Clases hoy, oportunidades para mañana</h2>
               <p className="text-muted mb-4 text-pretty">
                 No solo repartimos alimentos: acompañamos a los niños con actividades,
                 apoyo social y formación para que puedan salir adelante por sí mismas. Creemos en una ayuda
@@ -116,7 +124,7 @@ export default function Home() {
             </div>
             <div className="col-lg-6 order-lg-1">
               <img
-                src="/mission.png"
+                src="/Comedor.jpeg"
                 alt="Manos compartiendo un plato de comida caliente"
                 className="w-100"
                 style={{ borderRadius: "1.5rem", boxShadow: "0 20px 40px rgba(31,82,51,0.15)" }}
